@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Bootstrap-->
+    <nav class="navbar bg-danger nd">
+        <div class="container-fluid p-3 text-white">
+
+            <h1 class="mx-4">Calculadora de Gastos</h1>
+            <span class="iconify mx-5" data-icon="fluent:calculator-arrow-clockwise-24-filled" data-width="40"></span>
+        </div>
+    </nav>
+    <div class="container-fluid mg-ctn">
+        <form action="">
+            <div class="m-1 col-auto">
+                <input class="form-control" type="text" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="m-1 col-auto">
+                <input class="form-control" type="number" id="pago" placeholder="Pago">
+            </div>
+            <div class="m-1 col-auto">
+                <div class="m-1 btn-enviar">
+                    <button class="form-control" type="button" class="m-4 btn btn-danger"
+                        onclick="repartir()">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <div class="form-control" id="resultado">
+
+        </div>
+        <ul id="list-group" class="list-group"></ul>
+        <div id="total" type="text"></div>
+    </div>
+
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./home.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+
+</html>
